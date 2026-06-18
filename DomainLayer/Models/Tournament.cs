@@ -1,6 +1,4 @@
-﻿
-
-namespace DomainLayer.Models
+﻿namespace DomainLayer.Models
 {
     public class Tournament
     {
