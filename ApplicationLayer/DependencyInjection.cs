@@ -6,7 +6,7 @@ namespace ApplicationLayer
 {
     public static class DependencyInjection
     {
-        //Här registeras alla beroende / Paket /Services från Applikation 
+        // Registers application-layer services into the dependency injection container.
         public static IServiceCollection AddApplication (this IServiceCollection services)
         {
             services.AddScoped<IGameService, GameService>();

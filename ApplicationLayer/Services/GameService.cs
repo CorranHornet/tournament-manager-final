@@ -85,7 +85,7 @@ namespace ApplicationLayer.Services
                 TournamentId = dto.TournamentId
             };
 
-            // Persist changes to the data store using Unit of Work patterns (Add then Save)
+            // Persist changes to the database by committing the repository's tracked changes.
             await _gameRepository.AddAsync(game);
             await _gameRepository.SaveAsync();
 
