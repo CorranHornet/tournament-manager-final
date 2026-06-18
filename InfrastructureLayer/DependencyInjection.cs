@@ -5,7 +5,7 @@ using InfrastructureLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TournamentApi.Infrastructure.Repositories;
+
 
 
 namespace InfrastructureLayer
@@ -25,6 +25,7 @@ namespace InfrastructureLayer
 
             services.AddScoped<IGameRepository, GameRepository>();
             services.AddScoped<ITournamentRepository, TournamentRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             return services;
         }
     }

@@ -4,13 +4,13 @@ using InfrastructureLayer.Database;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace TournamentApi.Infrastructure.Repositories
+namespace InfrastructureLayer.Repositories
 {
-    public class GameRepository : IGameRepository
+    public class GameRepository : GenericRepository<Game>, IGameRepository
     {
         private readonly AppDbContext _context;
 
-        public GameRepository(AppDbContext context)
+        public GameRepository(AppDbContext context) : base(context) 
         {
             _context = context;
         }

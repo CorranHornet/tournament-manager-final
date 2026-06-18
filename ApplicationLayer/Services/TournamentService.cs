@@ -6,7 +6,7 @@ using ApplicationLayer.Interfaces;
 
 
 
-namespace TournamentApi.Services
+namespace ApplicationLayer.Services
 {
     public class TournamentService : ITournamentService
     {
