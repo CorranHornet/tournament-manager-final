@@ -1,7 +1,6 @@
 ﻿using ApplicationLayer.Dtos;
 using ApplicationLayer.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 
 namespace API.Controllers
 {

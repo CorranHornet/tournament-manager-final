@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using ApplicationLayer.Dtos;
+﻿using ApplicationLayer.Dtos;
 using ApplicationLayer.Services;
 using ApplicationLayer.Interfaces;
 using DomainLayer.Models;

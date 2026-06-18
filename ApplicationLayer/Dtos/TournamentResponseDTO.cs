@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ApplicationLayer.Dtos
 {
@@ -15,8 +14,7 @@ namespace ApplicationLayer.Dtos
 
         [Range(1, 500)]
         public int MaxPlayers { get; set; }
-        // Date removed → satisfies the “remove one property” requirement
-
         public ICollection<GameResponseDTO> Games { get; set; } = new List<GameResponseDTO>();
     }
 }
+ 

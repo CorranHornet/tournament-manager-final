@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ApplicationLayer.Dtos
+﻿namespace ApplicationLayer.Dtos
 {
     public class GameResponseDTO
     {

@@ -5,11 +5,11 @@ using InfrastructureLayer.Database;
 
 namespace InfrastructureLayer.Repositories
 {
-    public class TournamentRepository : ITournamentRepository
+    public class TournamentRepository : GenericRepository<Tournament>,ITournamentRepository
     {
         private readonly AppDbContext _context;
 
-        public TournamentRepository(AppDbContext context)
+        public TournamentRepository(AppDbContext context) : base (context)
         {
             _context = context;
         }
