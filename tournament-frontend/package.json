@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://CorranHornet.github.io/tournament-manager-fullstack",
+  "homepage": "https://CorranHornet.github.io/tournament-manager-final",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
